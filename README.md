@@ -26,6 +26,7 @@ You can load it directly:
 
 from datasets import load_dataset
 dataset = load_dataset("saudinewsnet")
+
 🏗️ How It Works
 1️⃣ Preprocess Arabic text:
 Removes URLs, numbers, punctuation.
@@ -42,6 +43,7 @@ Generates topic keywords using KeyBERT.
 Heatmaps, hierarchical structures, and topic evolution over time.
 7️⃣ Inference:
 Assigns new Arabic text to the most relevant topic.
+
 🔍 Example Usage
 Load & Preprocess Data
 
@@ -87,19 +89,23 @@ Inference on New Text
 story = "طرح مؤسسة البترول الكويتية عطاءً لبيع زيت الوقود عالي الكبريت"
 topic, prob = topic_model.transform([story])
 print("Predicted Topic:", topic)
+
 📊 Visualization
 
 topic_model.visualize_topics()
 topic_model.visualize_heatmap()
 topic_model.visualize_hierarchy()
 topic_model.visualize_topics_over_time()
+
 📌 Results
 The model successfully identifies coherent topics from Arabic text.
 Hierarchical clustering and topic merging allow deeper insights.
 Inference pipeline enables assigning new Arabic documents to relevant topics.
+
 📜 References
 BERTopic Documentation
 Sentence Transformers
 Saudi News Net Dataset
+
 📬 Contact
 For questions or contributions, reach out at moab10107@gmail.com
