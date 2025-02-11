@@ -28,7 +28,6 @@ from datasets import load_dataset
 dataset = load_dataset("saudinewsnet")
 🏗️ How It Works
 1️⃣ Preprocess Arabic text:
-
 Removes URLs, numbers, punctuation.
 Tokenizes and cleans text using NLTK.
 2️⃣ Generate Embeddings:
